@@ -14,17 +14,17 @@
 
         <div class="col">
           <label for="">Nome Cognome</label>
-          <input class="dettagli" id="nome-utente" type="text" placeholder="Inserisci il tuo nome">
+          <input class="dettagli" id="nome-utente" type="text" name="" value="" placeholder="Inserisci il tuo nome">
         </div>
 
         <div class="col">
           <label>Km da percorrere </label>
-          <input class="dettagli" id="chilometri-utente" type="number" placeholder="Km da percorrere">
+          <input class="dettagli" id="chilometri-utente" type="number" name="" value="" placeholder="Km da percorrere">
 
         </div>
         <div class="col">
           <label for="">Fascia d'et&agrave;</label>
-          <select id="eta-passeggero">
+          <select id="eta-passeggero" name="" value="">
             <option value="minorenne">Minorenne</option>
             <option value="maggiorenne">Maggiorenne</option>
             <option value="over65">over 65</option>
@@ -32,8 +32,8 @@
         </div>
       </div>
       <div class="center_btn">
-        <button class="btn">Genera</button>
-        <button class="btn">Annulla</button>
+        <button id="genera" class="btn">Genera</button>
+        <button id="annulla" class="btn">Annulla</button>
       </div>
     </div>
     <h2 class="title">IL TUO BIGLIETTO</h2>
@@ -57,7 +57,7 @@
             </thead>
             <tbody>
               <tr>
-                <td id="offerta"></td>
+                <td id="offerta">Biglietto Standard</td>
                 <td id="carrozza"></td>
                 <td id="codice-cp"></td>
                 <td id="costo"></td>

@@ -78,7 +78,6 @@ label {
 /* dettagli passeggero */
 .sottotitolo {
   font-size: 20px;
-  margin-left: 15px;
 }
 h3 {
   color: black;
@@ -92,7 +91,13 @@ h3 {
   padding: 10px;
 }
 .nav-footer-left {
-  width: 40%;
+  width: 20%;
   background-color: grey;
   padding: 10px;
+}
+.nav-footer-right {
+  width: 80%;
+  padding: 10px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
