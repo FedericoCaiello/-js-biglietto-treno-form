@@ -7,8 +7,6 @@ buttonGenera.addEventListener('click',
     console.log(nome);
 
     var chilometriUtente = document.getElementById('chilometri-utente');
-    console.log(chilometriUtente);
-
     var kmDaPercorrere = chilometriUtente.value;
     console.log(kmDaPercorrere);
       // // eta del passeggero
@@ -16,26 +14,32 @@ buttonGenera.addEventListener('click',
     var fasciaEta = etaPasseggero.value;
     console.log(fasciaEta);
     // // prezzo totale del biglietto
-
-
-    var costoBiglietto = chilometriUtente * 0.21; // moltiplicazione, con il segno*
+    var prezzoKm = 0.21;
+    var costoBiglietto = kmDaPercorrere * prezzoKm;
     console.log(costoBiglietto);
+
+    var offerta = "Tariffa Standard"
+
+
     // // condizioni sconto Biglietto
-    if (etaPasseggero < 18){
+    if (fasciaEta == "minorenne"){
       //   // minorenne sconto del 20%
-      console.log(costoBiglietto - (costoBiglietto * 20 / 100));
-      alert("sconto 20%")
-      document.getElementById('prezzo-biglietto').innerHTML ="Costo del Biglietto: " + (costoBiglietto - (costoBiglietto * 20 / 100));
+      costoBiglietto -= (costoBiglietto * 20 / 100);
+      offerta = 'sconto minorenne';
       //   // over 65 anni di eta' sconto 40%
-    } else if (etaPasseggero >= 65) {
-      alert("sconto 40%")
-      console.log(costoBiglietto - (costoBiglietto * 40 / 100));
-      document.getElementById('prezzo-biglietto').innerHTML ="Costo del Biglietto: " + (costoBiglietto - (costoBiglietto * 40 / 100));
+    } else if (fasciaEta == "over65") {
+      costoBiglietto = costoBiglietto - (costoBiglietto * 40 / 100);
+      offerta = 'sconto silver';
     }
-    else {
-      //   // nessuno sconto
-      console.log(costoBiglietto)
-      // document.getElementById('prezzo-biglietto').innerHTML ="Costo del Biglietto: " + costoBiglietto;
-    }
+    var carrozza = Math.floor(Math.random() * 9) + 1;
+    var cp = Math.floor(Math.random() * (100000 - 90000 + 1) ) + 90000;
+
+
+    document.getElementById('nome-passeggero').innerHTML = nome;
+    document.getElementById('offerta').innerHTML = offerta;
+    document.getElementById('costo').innerHTML = costoBiglietto.toFixed(2) + ' Euro';
+    document.getElementById('carrozza').innerHTML = carrozza;
+    document.getElementById('codice-cp').innerHTML = cp;
+
   }
 )

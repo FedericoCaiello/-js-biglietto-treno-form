@@ -100,4 +100,17 @@ h3 {
   padding: 10px;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
+  text-align: left;
+}
+th {
+  padding: 10px;
+}
+td {
+  text-align: left;
+  padding: 10px;
+  color: black;
+}
+h4 {
+  text-align: center;
+  padding: 20px;
 }
