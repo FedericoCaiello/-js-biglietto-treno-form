@@ -72,6 +72,10 @@ select {
   color: white;
   background-color: lightgrey;
 }
+.hidden {
+  opacity: 0;
+}
+
 label {
   margin-bottom: 10px
 }
@@ -96,7 +100,7 @@ h3 {
   padding: 10px;
 }
 .nav-footer-right {
-  width: 80%;
+  width: 50%;
   padding: 10px;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
@@ -113,4 +117,19 @@ td {
 h4 {
   text-align: center;
   padding: 20px;
+}
+.bottone_informazioni {
+  width: 30%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.btn_informazioni {
+  padding: 10px;
+}
+.btn_informazioni_bordo {
+  border-radius: 4px;
+  background-color: white;
 }

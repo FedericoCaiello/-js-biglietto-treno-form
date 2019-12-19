@@ -41,5 +41,17 @@ buttonGenera.addEventListener('click',
     document.getElementById('carrozza').innerHTML = carrozza;
     document.getElementById('codice-cp').innerHTML = cp;
 
+    var bottonAnnulla = document.getElementById('sparisci');
+    bottonAnnulla.classList.remove('hidden');
+
+
   }
 )
+var buttonAnnulla = document.getElementById("annulla");
+buttonAnnulla.addEventListener('click',
+function() {
+  var bottonAnnulla = document.getElementById('sparisci');
+  bottonAnnulla.classList.add('hidden');
+
+
+ } );
